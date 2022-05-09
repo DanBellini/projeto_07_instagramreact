@@ -57,6 +57,10 @@
   
     color: #8e8e8e;
   }
+
+  img {
+    border-radius: 100%;
+  }
   /* Aqui começa o CSS do topo */
   .topo {
     width: 100%;
@@ -291,6 +295,8 @@
   video {
     width: 612px;
     height: 612px;
+
+    border-radius: 0%;
   
     cursor: default;
     z-index: 0;
