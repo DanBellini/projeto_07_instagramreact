@@ -12,6 +12,7 @@ export default function Page (){
                 </div>
                 <Sidebar />
             </div>
+            
         </div>
     )
 }

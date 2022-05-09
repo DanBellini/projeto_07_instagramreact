@@ -1,4 +1,45 @@
+const sidebarinfo =[
+    {
+        photo:"./images/imagessidebar/Xayah.jpeg",
+        perfil:"Xayah"
+    },
+    {
+        photo: "./images/imagessidebar/Ekko.jpeg",
+        perfil:"Ekko"
+    },
+    {
+        photo: "./images/imagessidebar/Tristana.jpeg",
+        perfil:"Tristana"
+    },
+    {
+        photo:"./images/imagessidebar/Katarina.jpeg",
+        perfil:"Katarina"
+    },
+    {
+        photo:"./images/imagessidebar/Zoe.jpeg",
+        perfil:"Zoe"
+    }
+]
 
+function SugestionsSideBar(props){
+    return (
+        <div class="sugestoessidebar">
+        <div class="sugestao">
+            <div>
+                <img
+                    src={props.image}
+                    alt=""
+                />
+            </div>
+            <div>
+                <h5>{props.name}</h5>
+                <h6>Segue você</h6>
+            </div>
+        </div>
+        <p>Seguir</p>
+    </div>
+    )
+} 
 
 export default function Sidebar () {
     return (
@@ -6,94 +47,23 @@ export default function Sidebar () {
             <div class="destaquesidebar">
                 <div>
                     <img
-                        src="/Projetos/projeto2-instagram/imagenssidebar/catanacomics 1.png"
+                        src="./images/imagessidebar/Seraphine.jpeg"
                         alt=""
                     />
                 </div>
                 <div>
-                    <h5>catanacomics</h5>
-                    <h6>Catana</h6>
+                    <h5>Seraphine</h5>
+                    <h6>Cantora</h6>
                 </div>
             </div>
             <div class="sugestoessidebar">
                 <h6>Sugestões para você</h6>
                 <h4>Ver tudo</h4>
             </div>
-            <div class="sugestoessidebar">
-                <div class="sugestao">
-                    <div>
-                        <img
-                            src="/Projetos/projeto2-instagram/imagenssidebar/badvibesmemes 1.png"
-                            alt=""
-                        />
-                    </div>
-                    <div>
-                        <h5>bad.vibes.memes</h5>
-                        <h6>Segue você</h6>
-                    </div>
-                </div>
-                <p>Seguir</p>
-            </div>
-            <div class="sugestoessidebar">
-                <div class="sugestao">
-                    <div>
-                        <img
-                            src="/Projetos/projeto2-instagram/imagenssidebar/chibirdart 1.png"
-                            alt=""
-                        />
-                    </div>
-                    <div>
-                        <h5>chibirdart</h5>
-                        <h6>Segue você</h6>
-                    </div>
-                </div>
-                <p>Seguir</p>
-            </div>
-            <div class="sugestoessidebar">
-                <div class="sugestao">
-                    <div>
-                        <img
-                            src="/Projetos/projeto2-instagram/imagenssidebar/razoesparaacreditar 1.png"
-                            alt=""
-                        />
-                    </div>
-                    <div>
-                        <h5>razoesparaacreditar</h5>
-                        <h6>Novo no Instagram</h6>
-                    </div>
-                </div>
-                <p>Seguir</p>
-            </div>
-            <div class="sugestoessidebar">
-                <div class="sugestao">
-                    <div>
-                        <img
-                            src="/Projetos/projeto2-instagram/imagenssidebar/adorableanimals 1.png"
-                            alt=""
-                        />
-                    </div>
-                    <div>
-                        <h5>adorable_animals</h5>
-                        <h6>Segue você</h6>
-                    </div>
-                </div>
-                <p>Seguir</p>
-            </div>
-            <div class="sugestoessidebar">
-                <div class="sugestao">
-                    <div>
-                        <img
-                        src="/Projetos/projeto2-instagram/imagenssidebar/smallcutecats 1.png"
-                        alt=""
-                        />
-                    </div>
-                    <div>
-                        <h5>smallcutecats</h5>
-                        <h6>Segue você</h6>
-                    </div>
-                </div>
-                <p>Seguir</p>
-            </div>
+            {sidebarinfo.map(sugestions => <SugestionsSideBar
+                                                image={sugestions.photo}
+                                                name={sugestions.perfil} />)}
+
             <div class="texto1">
                 <p>
                 Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos
