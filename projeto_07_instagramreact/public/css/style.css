@@ -1,0 +1,511 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto";
+    font-style: normal;
+  
+    background-color: #e5e5e5;
+    cursor: default;
+  }
+  
+  /* fontes usadas */
+  img,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  strong,
+  ion-icon {
+    cursor: pointer;
+  }
+  ion-icon:hover {
+    color: blue;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #000000;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  
+    color: #262626;
+  }
+  
+  h5 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  
+    color: #262626;
+  }
+  
+  h6 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  
+    color: #8e8e8e;
+  }
+  /* Aqui começa o CSS do topo */
+  .topo {
+    width: 100%;
+    height: 54px;
+  
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .topo > div {
+    width: 935px;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .instagram {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .linha {
+    width: 1px;
+    height: 22px;
+  
+    margin: auto 10px;
+    background-color: #dbdbdb;
+  }
+  
+  .barradepesquisa {
+    width: 215px;
+    height: 28px;
+  
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .barradepesquisa p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: text;
+  
+    color: #979797;
+  }
+  
+  .barradepesquisa:hover {
+    cursor: text;
+  }
+  .barradeicones {
+    width: 145px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .vazio:hover {
+    color: red;
+  }
+  
+  /* Até aqui acaba o CSS do topo */
+  
+  .pagina {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .conteudo {
+    width: 935px;
+  
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0px;
+  }
+  
+  .lado1 {
+    width: 614px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Aqui começa o CSS da caixa de stores */
+  
+  .caixadestores {
+    height: 118px;
+    width: 614px;
+  
+    position: absolute;
+  
+    padding-left: 11px;
+  
+    margin: 88px 0 24px 0;
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  
+    overflow: hidden;
+  }
+  
+  .stores {
+    width: 66px;
+    height: 85px;
+  
+    margin: auto 7px;
+  
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .fundostores {
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;
+  
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+  .imgstores {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+  
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+  }
+  .caixadestores p {
+    position: absolute;
+    bottom: 0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  
+    color: #262626;
+  }
+  
+  .iconestores {
+    position: absolute;
+    top: 46px;
+    left: 579px;
+    z-index: 2;
+  
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  
+  /* Até aqui acaba o CSS da caixa de stores */
+  
+  /* Aqui começa o CSS dos posts */
+  
+  .caixadeposts {
+    display: flex;
+    flex-direction: column;
+  
+    margin-top: 230px;
+  }
+  
+  .post {
+    height: 749px;
+    margin-bottom: 60px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  }
+  
+  .autordopost {
+    height: 60px;
+  
+    margin: 0px 17px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .autor {
+    height: 32px;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .autor img {
+    width: 32px;
+    height: 32px;
+  
+    margin-right: 15px;
+  }
+  
+  .post > img,
+  video {
+    width: 612px;
+    height: 612px;
+  
+    cursor: default;
+    z-index: 0;
+  }
+  video {
+    background-color: #000000;
+  }
+  video:hover {
+    cursor: pointer;
+  }
+  
+  .iconesdopost {
+    height: 38px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ladodireito {
+    width: 95px;
+    margin-left: 17px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ladoesquerdo {
+    margin-right: 17px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .curtidas {
+    height: 38px;
+  
+    margin-left: 17px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .curtidas img {
+    height: 20px;
+    width: 20px;
+  
+    margin-right: 5px;
+  }
+  
+  .curtidas p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  
+    cursor: default;
+  
+    color: #000000;
+  }
+  
+  /*Até aqui acaba o CSS dos posts */
+  
+  /* Aqui começa o CSS da sidebar*/
+  .sidebar {
+    height: 470px;
+  
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+  
+    top: 111px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 0;
+  }
+  .sidebar > div {
+    padding-left: 34px;
+  }
+  
+  .destaquesidebar {
+    height: 56px;
+  
+    margin: 0 0 23px 0;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .destaquesidebar img {
+    width: 56px;
+    height: 56px;
+  
+    margin-right: 17px;
+  }
+  
+  .sugestoessidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    margin-bottom: 16px;
+  }
+  .sugestoessidebar > h6 {
+    cursor: default;
+  }
+  .sugestoessidebar p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  
+    color: #139ef2;
+  }
+  .sugestoessidebar p:hover {
+    text-decoration: underline;
+  }
+  
+  .sugestao {
+    height: 32px;
+  
+    margin: 16px 0;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .sugestao img {
+    width: 32px;
+    height: 32px;
+  
+    margin-right: 11px;
+  }
+  
+  .texto1 p {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+  
+    color: #c7c7c7;
+  }
+  /* Até aqui acaba o CSS da sidebar*/
+  
+  .topo-mobile {
+    display: none;
+  }
+  
+  .barra-mobile {
+    display: none;
+  }
+  @media (max-width: 935px) {
+    .topo > div {
+      justify-content: space-around;
+    }
+    .pagina {
+      flex-direction: initial;
+    }
+    .conteudo {
+      justify-content: center;
+    }
+    .sidebar {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 614px) {
+    .topo {
+      display: none;
+    }
+    .iconemobile {
+      font-size: 32px;
+    }
+    .topo-mobile {
+      width: 100%;
+      height: 54px;
+  
+      background-color: #ffffff;
+      border: 1px solid #dbdbdb;
+  
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 3;
+  
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .barra-mobile {
+      width: 100%;
+      height: 54px;
+  
+      background-color: #ffffff;
+      border: 1px solid #dbdbdb;
+  
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 3;
+  
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .caixadestores {
+      margin: 54px 0 0 0;
+    }
+    .iconestores {
+      display: none;
+    }
+    .caixadeposts {
+      margin-top: 172px;
+    }
+  }
+  
